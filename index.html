@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <h1>Form Validation</h1>
+    <div class="form-label">
+        <form action="RegistrationForm.html" onSubmit="return validate();" method="post">
+            <div class="form-style">
+                <div class="form-style-name">
+                    <label for="name">Full Name</label><br>
+                    <input type="text" id="name" name="name" autocomplete="off"><br>
+                    <span id="name-error" style="color: rgb(248, 0, 0);" class="form-error"></span>
+                </div>
+                <div class="form-style-regno">
+                    <label for="regno">Registration Number</label><br>
+                    <input type="text" id="regno" name="regno" autocomplete="off"><br>
+                    <span id="regno-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-style-email">
+                    <label for="email">Email</label><br>
+                    <input type="text" id="email" name="email" autocomplete="off"><br>
+                    <span id="email-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-style-password">
+                    <label for="password">Password</label><br>
+                    <input type="text" id="password" name="password" autocomplete="off"><br>
+                    <span id="password-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-style-password">
+                    <label for="password">Confirm Password</label><br>
+                    <input type="text" id="cpassword" name="cpassword" autocomplete="off"><br>
+                    <span id="cpassword-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-style-phone">
+                    <label for="phone">Mobile Number</label><br>
+                    <input type="text" id="phone" name="phone" autocomplete="off"><br>
+                    <span id="phone-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-style-addr">
+                    <label for="addr">Address</label><br>
+                    <input type="text" id="addr" name="addr" autocomplete="off"><br>
+                    <span id="addr-error" style="color: rgb(248, 0, 0);"  class="form-error"></span>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" name="submit" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+    </script>
+    <script type="text/javaScript" src="./validation.js"></script>
+</body>
+
+</html>
